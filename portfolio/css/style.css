@@ -571,18 +571,18 @@ h3.my-profession
     text-align: justify;
     color: var(--text-black-700);
 }
-/* service */
-.service .container
+/* experiences */
+.experiences .container
 {
     padding-bottom: 40px;
 }
-.service .service-item
+.experiences .experiences-item
 {
     margin-bottom: 30px;
     flex: 0 0 33.33%;
     max-width: 33.33%;
 }
-.service .service-item .service-item-inner
+.experiences .experiences-item .experiences-item-inner
 {
     background-color: var(--bg-black-100);
     border: 1px solid var(--bg-black-50);
@@ -591,11 +591,11 @@ h3.my-profession
     text-align: center;
     transition: all 0.3S ease;
 }
-.service .service-item .service-item-inner:hover
+.experiences .experiences-item .experiences-item-inner:hover
 {
     box-shadow:  0 0 20px rgba(48, 46, 77, 0.15);
 }
-.service .service-item .service-item-inner .icon 
+.experiences .experiences-item .experiences-item-inner .icon 
 {
     height: 60px;
     width: 60px;
@@ -605,23 +605,23 @@ h3.my-profession
     text-align: center;
     transition: all 0.3s ease;
 }
-.service .service-item .service-item-inner .icon .fa
+.service .experiences-item .experiences-item-inner .icon .fa
 {
     font-size: 40px;
     line-height: 60px;
     color: var(--skin-color);
     transition: all 0.3s ease;
 }
-.service .service-item .service-item-inner:hover .icon
+.experiences .experiences-item .experiences-item-inner:hover .icon
 {
     background: var(--skin-color);
 }
-.service .service-item .service-item-inner:hover .icon .fa
+.experiences .experiences-item .experiences-item-inner:hover .icon .fa
 {
     font-size: 25px;
     color: #ffffff;
 }
-.service .service-item .service-item-inner h4
+.experiences .experiences-item .experiences-item-inner h4
 {
     font-size: 18px;
     margin-bottom: 15px;
@@ -629,46 +629,77 @@ h3.my-profession
     font-weight: 700;
     text-transform: capitalize;
 }
-.service .service-item .service-item-inner p
+.experiences .experiences-item .experiences-item-inner p
 {
     font-size: 16px;
     color: var(--text-black-700);
     line-height: 25px;
 }
-/* portfolio */
-.portfolio .container
+/* projects */
+.projects .container
 {
     padding-bottom: 40px;
 }
-.portfolio .portfolio-heading
+.projects .projects-item
 {
-    flex: 0 0 100%;
-    max-width: 100%;
-    margin-bottom: 40px;
-}
-.portfolio .portfolio-heading h2
-{
-    color: var(--text-black-900);
-    font-weight: 500;
-}
-.portfolio .portfolio-item
-{
+    margin-bottom: 30px;
     flex: 0 0 33.33%;
     max-width: 33.33%;
-    margin-bottom: 30px;
 }
-.portfolio .portfolio-item-inner
+.projects .projects-item .projects-item-inner
 {
-    border: 6px solid var(--bg-black-100);
+    background-color: var(--bg-black-100);
+    border: 1px solid var(--bg-black-50);
     border-radius: 10px;
-    overflow: hidden;
-    cursor: pointer;
+    padding: 30px 15px;
+    text-align: center;
+    transition: all 0.3S ease;
 }
-.portfolio .portfolio-item-inner .portfolio-img img
+.projects .projects-item .projects-item-inner:hover
 {
-    width: 100%;
-    display: block;
+    box-shadow:  0 0 20px rgba(48, 46, 77, 0.15);
 }
+.projects .projects-item .projects-item-inner .icon 
+{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: block;
+    margin:  0 auto 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.projects .projects-item .projects-item-inner .icon .fa
+{
+    font-size: 40px;
+    line-height: 60px;
+    color: var(--skin-color);
+    transition: all 0.3s ease;
+}
+.projects .projects-item .projects-item-inner:hover .icon
+{
+    background: var(--skin-color);
+}
+.projects .projects-item .projects-item-inner:hover .icon .fa
+{
+    font-size: 25px;
+    color: #ffffff;
+}
+.projects .projects-item .projects-item-inner h4
+{
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: var(--text-black-900);
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.projects .projects-item .projects-item-inner p
+{
+    font-size: 16px;
+    color: var(--text-black-700);
+    line-height: 25px;
+}
+
 /* contact */
 .contact-title
 {
