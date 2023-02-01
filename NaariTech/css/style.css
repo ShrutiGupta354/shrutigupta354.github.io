@@ -657,6 +657,210 @@ h3.my-profession
     height: 50px;
     padding: 0 50px;
 }
+
+/* youtube */
+.youtube .container
+{
+    padding-bottom: 40px;
+}
+.youtube .youtube-item
+{
+    margin-bottom: 30px;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.youtube .youtube-item .youtube-item-inner
+{
+    background-color: var(--bg-black-100);
+    border: 1px solid var(--bg-black-50);
+    border-radius: 60px;
+    padding: 30px 15px;
+    text-align: start;
+    transition: all 0.3S ease;
+}
+.youtube .youtube-item .youtube-item-inner:hover
+{
+    box-shadow:  0 0 20px rgba(48, 46, 77, 0.15);
+}
+
+.youtube .youtube-item .youtube-item-inner .youtube-btn 
+{
+    margin:  0 auto 20px;
+}
+
+.youtube .youtube-item .youtube-item-inner p
+{
+    font-size: 15px;
+    color: var(--text-black-700);
+    line-height: 25px;
+}
+
+.youtube .youtube-item .youtube-item-inner .personal-info
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-top: 10px;
+}
+.youtube .youtube-item .youtube-item-inner .personal-info .info-item
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.youtube .youtube-item .youtube-item-inner .personal-info .info-item p
+{
+    font-weight: 900;
+    padding: 10px 0;
+    font-size: 17px;
+    color: var(--text-black-900);
+    border-bottom: 1px solid var(--bg-black-50);
+}
+.youtube .youtube-item .youtube-item-inner .personal-info .info-item p span
+{
+    font-weight: 100;
+    color: var(--text-black-700);
+    margin-left: 5px;
+    display: inline-block;
+}
+
+
+/* scholarship*/
+.scholarship .container
+{
+    padding-bottom: 40px;
+}
+
+.scholarship .info-item
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.scholarship .info-item p
+{
+    font-weight: 900;
+    padding: 30px 0;
+    font-size: 20px;
+    color: var(--text-black-900);
+    border-bottom: 1px solid var(--bg-black-50);
+}
+.scholarship .info-item p span
+{
+    font-weight: 100;
+    color: var(--text-black-700);
+    margin-left: 5px;
+    display: inline-block;
+}
+
+/* club */
+.club .container
+{
+    padding-bottom: 40px;
+}
+
+.club .info-item
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.club .info-item p
+{
+    font-weight: 900;
+    padding: 30px 0;
+    font-size: 20px;
+    color: var(--text-black-900);
+    border-bottom: 1px solid var(--bg-black-50);
+}
+.club .info-item p span
+{
+    font-weight: 100;
+    color: var(--text-black-700);
+    margin-left: 5px;
+    display: inline-block;
+}
+
+/* project */
+.project .container
+{
+    padding-bottom: 40px;
+}
+
+.project.info-item
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.project .info-item p
+{
+    font-weight: 900;
+    padding: 30px 0;
+    font-size: 20px;
+    color: var(--text-black-900);
+    border-bottom: 1px solid var(--bg-black-50);
+}
+.project .info-item p span
+{
+    font-weight: 100;
+    color: var(--text-black-700);
+    margin-left: 5px;
+    display: inline-block;
+}
+
+
+/* website */
+.website .container
+{
+    padding-bottom: 40px;
+}
+
+.website .info-item
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.website .info-item p
+{
+    font-weight: 900;
+    padding: 30px 0;
+    font-size: 20px;
+    color: var(--text-black-900);
+    border-bottom: 1px solid var(--bg-black-50);
+}
+.website .info-item p span
+{
+    font-weight: 100;
+    color: var(--text-black-700);
+    margin-left: 5px;
+    display: inline-block;
+}
+
+/* .event */
+.event .container
+{
+    padding-bottom: 40px;
+}
+
+.event .info-item
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.event .info-item p
+{
+    font-weight: 900;
+    padding: 30px 0;
+    font-size: 20px;
+    color: var(--text-black-900);
+    border-bottom: 1px solid var(--bg-black-50);
+}
+.event .info-item p span
+{
+    font-weight: 100;
+    color: var(--text-black-700);
+    margin-left: 5px;
+    display: inline-block;
+}
+
+
 @media (max-width:1199px)
 {
     .section .container
