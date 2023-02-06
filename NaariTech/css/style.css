@@ -796,25 +796,28 @@ h3.my-profession
     padding-bottom: 40px;
 }
 
-.project.info-item
+.project .info-item
 {
     flex: 0 0 100%;
     max-width: 100%;
 }
-.project .info-item p
+
+.project .info-item h3
 {
-    font-weight: 900;
-    padding: 30px 0;
-    font-size: 20px;
+    font-weight: 800;
+    padding: 6px 0;
+    font-size: 25px;
     color: var(--text-black-900);
     border-bottom: 1px solid var(--bg-black-50);
 }
-.project .info-item p span
+
+.project .info-item p
 {
-    font-weight: 100;
-    color: var(--text-black-700);
-    margin-left: 5px;
-    display: inline-block;
+    font-weight: 400;
+    padding: 25px 0;
+    font-size: 20px;
+    color: var(--text-black-900);
+    border-bottom: 1px solid var(--bg-black-50);
 }
 
 
