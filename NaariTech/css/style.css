@@ -735,9 +735,19 @@ h3.my-profession
     flex: 0 0 100%;
     max-width: 100%;
 }
+
+.scholarship .info-item h3
+{
+    font-weight: 1000;
+    padding: 30px 0;
+    font-size: 30px;
+    color: var(--text-black-900);
+    border-bottom: 1px solid var(--bg-black-50);
+}
+
 .scholarship .info-item p
 {
-    font-weight: 900;
+    font-weight: 800;
     padding: 30px 0;
     font-size: 20px;
     color: var(--text-black-900);
@@ -745,7 +755,7 @@ h3.my-profession
 }
 .scholarship .info-item p span
 {
-    font-weight: 100;
+    font-weight: 200;
     color: var(--text-black-700);
     margin-left: 5px;
     display: inline-block;
