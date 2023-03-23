@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,6 +17,14 @@
   <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
   <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
   <link rel="stylesheet" href="css/style-switcher.css">
+
+  <script src="https://www.google.com/recaptcha/api.js"></script>
+  <script>
+    function onSubmit(token) {
+        document.getElementById("contactForm").submit();
+    }
+    </script>
+
 </head>
 <body>
   <!-- ===== Main Container Start ===== -->
@@ -291,7 +300,7 @@
             </div>
           </div>
           <h3 class="contact-title padd-15">Have Questions ?</h3>
-          <h4 class="contact-sub-title padd-15">I will try my best to answer them :)</h4>
+          <h4 class="contact-sub-title padd-15">I will try my best to answer them.</h4>
           <div class="row">
             <!-- ===== Contact info item start ====== -->
             <div class="contact-info-item padd-15">
@@ -315,34 +324,42 @@
             </div>
             <!-- ===== Contact info item end ====== -->
           </div>
+
           <h3 class="contact-title padd-15">SEND ME AN EMAIL</h3>
           <h4 class="contact-sub-title padd-15">I'M VERY RESPOSIVE TO MESSAGES</h4>
+
           <!-- ====== Contact Form ====== -->
           <div class="row">
             <div class="contact-form padd-15">
+              <form id="contactForm" method="post" action="">
+
+                <?php if(!empty($statusMsg)){ ?>
+                  <p class="status-msg <?php echo $status; ?>"><?php echo $statusMsg; ?></p>
+                <?php } ?>
+
               <div class="row">
                 <div class="form-item col-6 padd-15">
                   <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Name">
+                    <input type="text" class="form-control" value="<?php echo !empty($postData['name'])?$postData ['name']:''; ?>" placeholder="Name" name="name">
                   </div>
                 </div>
                 <div class="form-item col-6 padd-15">
                   <div class="form-group">
-                    <input type="email" class="form-control" placeholder="Email">
+                    <input type="email" class="form-control" value="<?php echo !empty($postData['email'])?$postData ['email']:''; ?>" placeholder="Email" name="email">
                   </div>
                 </div>
               </div>
               <div class="row">
                 <div class="form-item col-12 padd-15">
                   <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Subject">
+                    <input type="text" class="form-control" value="<?php echo !empty($postData['subject'])?$postData ['subject']:''; ?>" placeholder="Subject" name="subject">
                   </div>
                 </div>
               </div>
               <div class="row">
                 <div class="form-item col-12 padd-15">
                   <div class="form-group">
-                    <textarea name="" class="form-control" id=""  placeholder="Message"></textarea>
+                    <textarea name="" class="form-control" id="" value="<?php echo !empty($postData['message'])?$postData ['message']:''; ?>" placeholder="Message" name="message"></textarea>
                   </div>
                 </div>
               </div>
@@ -351,6 +368,16 @@
                   <button type="submit" class="btn">Send Message</button>
                 </div>
               </div>
+
+              <input type="hidden" name="submit_frm" value="1">
+
+              <!-- Submit button with reCAPTCHA trigger-->
+              <button class="g-recaptcha" 
+              data-sitekey="reCAPTCHA_Site_Key" 
+              data-callback='onSubmit' 
+              data-action='submit'>Send Message</button>
+
+              </form>
             </div>
           </div>
         </div>

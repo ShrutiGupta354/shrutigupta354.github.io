@@ -67,7 +67,7 @@ const nav = document.querySelector(".nav"),
           }
       }
 
-      /*
+      
       document.querySelector(".hire-me").addEventListener("click", function()
       {
           const sectionIndex = this.getAttribute("data-section-index");
@@ -77,7 +77,7 @@ const nav = document.querySelector(".nav"),
           removeBackSection();
           addBackSection(sectionIndex);
       })
-      */
+      
      
       const navTogglerBtn = document.querySelector(".nav-toggler"),
             aside = document.querySelector(".aside");
