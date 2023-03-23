@@ -18,12 +18,14 @@
   <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
   <link rel="stylesheet" href="css/style-switcher.css">
 
+  <!-- 
   <script src="https://www.google.com/recaptcha/api.js"></script>
   <script>
     function onSubmit(token) {
         document.getElementById("contactForm").submit();
     }
     </script>
+  -->
 
 </head>
 <body>
@@ -331,35 +333,41 @@
           <!-- ====== Contact Form ====== -->
           <div class="row">
             <div class="contact-form padd-15">
-              <form id="contactForm" method="post" action="">
 
+              <!-- <form id="contactForm" method="post" action=""> -->             
+              <!-- 
                 <?php if(!empty($statusMsg)){ ?>
                   <p class="status-msg <?php echo $status; ?>"><?php echo $statusMsg; ?></p>
                 <?php } ?>
+               -->
 
               <div class="row">
                 <div class="form-item col-6 padd-15">
                   <div class="form-group">
-                    <input type="text" class="form-control" value="<?php echo !empty($postData['name'])?$postData ['name']:''; ?>" placeholder="Name" name="name">
+                    <input type="text" class="form-control" placeholder="Name" name="name">
+                  <!--  <input type="text" class="form-control" value="<?php echo !empty($postData['name'])?$postData ['name']:''; ?>" placeholder="Name" name="name"> -->
                   </div>
                 </div>
                 <div class="form-item col-6 padd-15">
                   <div class="form-group">
-                    <input type="email" class="form-control" value="<?php echo !empty($postData['email'])?$postData ['email']:''; ?>" placeholder="Email" name="email">
+                    <input type="email" class="form-control" placeholder="Email" name="email">
+                   <!-- <input type="email" class="form-control" value="<?php echo !empty($postData['email'])?$postData ['email']:''; ?>" placeholder="Email" name="email"> -->
                   </div>
                 </div>
               </div>
               <div class="row">
                 <div class="form-item col-12 padd-15">
                   <div class="form-group">
-                    <input type="text" class="form-control" value="<?php echo !empty($postData['subject'])?$postData ['subject']:''; ?>" placeholder="Subject" name="subject">
+                    <input type="text" class="form-control" placeholder="Subject" name="subject">
+                    <!-- <input type="text" class="form-control" value="<?php echo !empty($postData['subject'])?$postData ['subject']:''; ?>" placeholder="Subject" name="subject"> -->
                   </div>
                 </div>
               </div>
               <div class="row">
                 <div class="form-item col-12 padd-15">
                   <div class="form-group">
-                    <textarea name="" class="form-control" id="" value="<?php echo !empty($postData['message'])?$postData ['message']:''; ?>" placeholder="Message" name="message"></textarea>
+                    <input class="form-control" placeholder="Message" name="message">
+                    <!-- <textarea name="" class="form-control" id="" value="<?php echo !empty($postData['message'])?$postData ['message']:''; ?>" placeholder="Message" name="message"></textarea> -->
                   </div>
                 </div>
               </div>
@@ -369,13 +377,13 @@
                 </div>
               </div>
 
-              <input type="hidden" name="submit_frm" value="1">
+              <!-- <input type="hidden" name="submit_frm" value="1"> -->
 
-              <!-- Submit button with reCAPTCHA trigger-->
+              <!-- Submit button with reCAPTCHA trigger
               <button class="g-recaptcha" 
               data-sitekey="reCAPTCHA_Site_Key" 
               data-callback='onSubmit' 
-              data-action='submit'>Send Message</button>
+              data-action='submit'>Send Message</button> -->
 
               </form>
             </div>
