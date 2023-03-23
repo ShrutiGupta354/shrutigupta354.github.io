@@ -709,34 +709,17 @@ h3.feature
     line-height: 25px;
 }
 
-.resources .resources-img1
-{
-    flex: 0 0 40%;
-    max-width: 40%;
-    text-align: center;
-    position: relative;
-}
-
-.resources .resources-img1 img
-{
-    margin: auto;
-    border-radius: 5px;
-    height: 200px;
-}
-
 .youtube .youtube-item .youtube-item-inner .personal-info
 {
-    flex: 0 0 40%;
+    flex: 0 0 100%;
     max-width: 100%;
     margin-top: 10px;
-    position: relative;
 }
 .youtube .youtube-item .youtube-item-inner .personal-info .info-item
 {
     flex: 0 0 100%;
     max-width: 100%;
     margin-top: 10px;
-    position: relative;
 }
 .youtube .youtube-item .youtube-item-inner .personal-info .info-item p
 {
